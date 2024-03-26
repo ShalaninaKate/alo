@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta name="theme-color" content="#111111"> -->
+  <title>Investments</title>
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Quantify.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <aside class="sidebar">
+    <button type="button" class=" icon-menu icon-menu--open"></button>
+    <div class="sidebar__logo">
+      <a href="#" class="logo"><img src="./img/logo.png" alt="logo"></a>
+    </div>
+    <nav class="sidebar__nav nav">
+      <h2 class="nav__title">Account</h2>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#account"></use>
+            </svg>
+            <span class="nav__link-text">Account</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#wallets"></use>
+            </svg>
+            <span class="nav__link-text">Wallets</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link active">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#investments"></use>
+            </svg>
+            <span class="nav__link-text">Investments</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#performance"></use>
+            </svg>
+            <span class="nav__link-text">Performance</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#partners"></use>
+            </svg>
+            <span class="nav__link-text">Partners</span>
+          </a>
+        </li>
+      </ul>
+      <h2 class="nav__title">Other pages</h2>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#ranking"></use>
+            </svg>
+            <span class="nav__link-text">Ranking</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#faq"></use>
+            </svg>
+            <span class="nav__link-text">FAQ</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__link-icon">
+              <use xlink:href="img/sprite.svg#settings"></use>
+            </svg>
+            <span class="nav__link-text">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="sidebar__invite invite">
+      <div class="invite__image">
+        <picture>
+          <source srcset="./img/man.webp" type="image/webp">
+          <img loading="lazy" src="./img/man.png" width="" height="" alt="man">
+        </picture>
+      </div>
+      <h2 class="invite__title">Invite You Friends</h2>
+      <p class="invite__text">Nam sapien sit sit morbi. Enim nunc ut mi egestas felis egestas diam.</p>
+      <!-- <button class="button invite__button">
+        <svg class="button__icon">
+          <use xlink:href="img/sprite.svg#ranking"></use>
+        </svg>
+        <span class="button__text">Invite</span>
+      </button> -->
+      <button class="button invite__button">Invite</button>
+      <!-- <button class="button button--transparent invite__button">Invite</button> -->
+    </div>
+</aside>
+
+    <div class="page">
+      <header class="header">
+  <div class="header__menu">
+    <button type="button" class="icon-menu icon-menu--burger"><span></span></button>
+  </div>
+  <div class="header__block">
+    <h1 class="header__title">Hello, John Doe!</h1>
+    <p class="header__text">Manage your marketing performance with our optimization solution!</p>
+  </div>
+  <div class="header__actions">
+    <button class="header__search" type="submit">
+      <svg class="header__search-icon">
+        <use xlink:href="img/sprite.svg#search"></use>
+      </svg>
+    </button>
+    <button class="header__notification" type="submit">
+      <svg class="header__notification-icon">
+        <use xlink:href="img/sprite.svg#notification"></use>
+      </svg>
+    </button>
+    <div class="header__lang">
+      <button class="header__lang-btn">
+        <span class="header__lang-title">En</span>
+        <svg class="header__lang-arrow arrow">
+          <use xlink:href="img/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+      <ul class="header__lang-list">
+        <li class="header__lang-item">En</li>
+        <li class="header__lang-item">Rus</li>
+        <li class="header__lang-item">Deu</li>
+      </ul>
+    </div>
+    <button class="header__user user">
+      <img class="user__avatar" src="./img/ava.png" alt="avatar">
+      <div class="user__info">
+        <div class="user__name">John Doe</div>
+        <div class="user__id">0xs4nKp9KL98Iy87ddT48</div>
+      </div>
+      <svg class="header__user-arrow arrow">
+        <use xlink:href="img/sprite.svg#arrow"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="investments mb-section">
+          <h2 class="investments__title title mb-title">Wallets</h2>
+          <ul class="investments__list">
+            <li class="investments__card card card--purple">
+              <svg class="card__icon card__icon--ethereum">
+                <use xlink:href="img/sprite.svg#ethereum"></use>
+              </svg>
+              <h3 class="card__title">ERC-20</h3>
+              <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">ETH</div>
+                  <div class="card__amount-value">0.05</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">wBTC</div>
+                  <div class="card__amount-value">1.2400</div>
+                </li>
+              </ul>
+              <div class="card__actions">
+                <button class="card__action button">
+                  <svg class="button__icon ">
+                    <use xlink:href="img/sprite.svg#ranking"></use>
+                  </svg>
+                  <span class="button__text">Invest</span>
+                </button>
+              </div>
+            </li>
+            <li class="wallets__card card card--blue">
+              <svg class="card__icon card__icon--bnb">
+                <use xlink:href="img/sprite.svg#bnb"></use>
+              </svg>
+              <h3 class="card__title">BEP-20</h3>
+              <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">DAI</div>
+                  <div class="card__amount-value">0.05</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">BTCB</div>
+                  <div class="card__amount-value">1.2400</div>
+                </li>
+              </ul>
+              <div class="card__actions">
+                <button class="card__action button">
+                  <svg class="button__icon">
+                    <use xlink:href="img/sprite.svg#ranking"></use>
+                  </svg>
+                  <span class="button__text">Invest</span>
+                </button>
+              </div>
+            </li>
+            <li class="wallets__card card card--blue-light">
+              <svg class="card__icon card__icon--tron">
+                <use xlink:href="img/sprite.svg#tron"></use>
+              </svg>
+              <h3 class="card__title">TRC-20</h3>
+              <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">DAI</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+              </ul>
+              <div class="card__actions">
+                <button class="card__action button">
+                  <svg class="button__icon">
+                    <use xlink:href="img/sprite.svg#ranking"></use>
+                  </svg>
+                  <span class="button__text">Invest</span>
+                </button>
+              </div>
+            </li>
+            <li class="wallets__card card card--beige">
+              <svg class="card__icon card__icon--bitcoin">
+                <use xlink:href="img/sprite.svg#bitcoin"></use>
+              </svg>
+              <h3 class="card__title">TRC-20</h3>
+              <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">DAI</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+              </ul>
+              <div class="card__actions">
+                <button class="card__action button">
+                  <svg class="button__icon">
+                    <use xlink:href="img/sprite.svg#ranking"></use>
+                  </svg>
+                  <span class="button__text">Invest</span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="investmentstners">
+          <h2 class="investmentstners__title title mb-title-table">Investments</h2>
+          <div class="table table--investments">
+            <div class="table__row">
+              <ul class="table__items table__items--title">
+                <li class="table__item">Date Invested</li>
+                <li class="table__item">Weeks Term</li>
+                <li class="table__item">Weeks Invested</li>
+                <li class="table__item">Amount</li>
+                <li class="table__item">Dividends  Earned</li>
+                <li class="table__item">Compounded</li>
+                <li class="table__item">Status</li>
+                <li class="table__item">Next Payment Date</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">1.1.2024</li>
+                <li class="table__item">8</li>
+                <li class="table__item">4</li>
+                <li class="table__item">1.0030 BTC</li>
+                <li class="table__item">0.0401</li>
+                <li class="table__item">No</li>
+                <li class="table__item">
+                  <div class="table__item-status table__item-status--active">Active</div>
+                </li>
+                <li class="table__item">01.08.024</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">10.10.2023</li>
+                <li class="table__item">4</li>
+                <li class="table__item">4</li>
+                <li class="table__item">5,000 USD</li>
+                <li class="table__item">$250</li>
+                <li class="table__item">Yes</li>
+                <li class="table__item">
+                  <div class="table__item-status">Inactive</div>
+                </li>
+                <li class="table__item">—</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">1.1.2024</li>
+                <li class="table__item">8</li>
+                <li class="table__item">4</li>
+                <li class="table__item">1.0030 BTC</li>
+                <li class="table__item">0.0401</li>
+                <li class="table__item">No</li>
+                <li class="table__item">
+                  <div class="table__item-status table__item-status--active">Active</div>
+                </li>
+                <li class="table__item">01.08.024</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">10.10.2023</li>
+                <li class="table__item">4</li>
+                <li class="table__item">4</li>
+                <li class="table__item">5,000 USD</li>
+                <li class="table__item">$250</li>
+                <li class="table__item">Yes</li>
+                <li class="table__item">
+                  <div class="table__item-status">Inactive</div>
+                </li>
+                <li class="table__item">—</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">1.1.2024</li>
+                <li class="table__item">8</li>
+                <li class="table__item">4</li>
+                <li class="table__item">1.0030 BTC</li>
+                <li class="table__item">0.0401</li>
+                <li class="table__item">No</li>
+                <li class="table__item">
+                  <div class="table__item-status table__item-status--active">Active</div>
+                </li>
+                <li class="table__item">01.08.024</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">10.10.2023</li>
+                <li class="table__item">4</li>
+                <li class="table__item">4</li>
+                <li class="table__item">5,000 USD</li>
+                <li class="table__item">$250</li>
+                <li class="table__item">Yes</li>
+                <li class="table__item">
+                  <div class="table__item-status">Re-invest</div>
+                </li>
+                <li class="table__item">—</li>
+              </ul>
+            </div>
+            <div class="table__row">
+              <ul class="table__items table__items">
+                <li class="table__item">1.1.2024</li>
+                <li class="table__item">8</li>
+                <li class="table__item">4</li>
+                <li class="table__item">1.0030 BTC</li>
+                <li class="table__item">0.0401</li>
+                <li class="table__item">No</li>
+                <li class="table__item">
+                  <div class="table__item-status table__item-status--active">Active</div>
+                </li>
+                <li class="table__item">01.08.024</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
