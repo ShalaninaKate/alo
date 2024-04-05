@@ -7,7 +7,7 @@
   <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <meta name="theme-color" content="#111111"> -->
-  <title>Authentification.</title>
+  <title>Recover</title>
   <link rel="preload" href="fonts/PoppinsLight-56898f3ce3.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsMedium-d319a98a33.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/PoppinsRegular-bebb23ead3.woff2" as="font" type="font/woff2" crossorigin>
@@ -34,30 +34,33 @@
         <div class="register__logo">
           <a href="#" class="logo"><img src="./img/logo-big-66e7c2ff0c.png" alt="logo"></a>
         </div>
-
-        <h1 class="register__title">Authentification.</h1>
+        <h1 class="register__title">Recovery Password</h1>
         <p class="register__text">A ipsum sagittis ultrices tristique dictum. Pharetra orci ac vivamus eleifend massa
           adipiscing.</p>
-
         <form class="register__authentification">
           <div class="authentification__form">
+            <div class="settings__item">
+              <label for="formEmail" class="form__label">E-mail</label>
+              <div class="form__input input">
+                <svg class="input__icon input__icon--email">
+                  <use xlink:href="img/sprite-7fe2d12747.svg#email"></use>
+                </svg>
+                <input id="formEmail" type="email" name="email" placeholder="Input text" class="input__control">
+              </div>
+            </div>
             <label class="authentification__label">Google Authentification Code</label>
-            <div class="authentification__inputs error">
+            <div class="authentification__inputs">
               <input type="text" name="" class="authentification__input">
               <input type="text" name="" class="authentification__input">
               <input type="text" name="" class="authentification__input">
               <input type="text" name="" class="authentification__input">
               <input type="text" name="" class="authentification__input">
               <input type="text" name="" class="authentification__input">
-              <span class="error-text">Error</span>
             </div>
           </div>
-          <button class="register__button button">Sign In</button>
+          <button class="register__button button">Send Recovery Link</button>
         </form>
-        <div class="register__login">
-          Don’t have an account?
-          <a href="#" class="register__link-login">Sign up</a>
-        </div>
+
       </div>
     </main>
   </div>
