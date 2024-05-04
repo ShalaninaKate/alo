@@ -8,15 +8,15 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <meta name="theme-color" content="#111111"> -->
   <title>Wallets</title>
-  <link rel="preload" href="fonts/PoppinsLight-56898f3ce3.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/PoppinsMedium-d319a98a33.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/PoppinsRegular-bebb23ead3.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/PoppinsSemiBold-bb8f49b65a.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/Quantify-04dcbf473c.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/main-e06370fb8d.css">
+  <link rel="preload" href="fonts/PoppinsLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/PoppinsSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Quantify.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-  <script defer src="js/main-c7c9888074.js"></script>
+  <script defer src="js/main.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <aside class="sidebar">
     <button type="button" class=" icon-menu icon-menu--open"></button>
     <div class="sidebar__logo">
-      <a href="#" class="logo"><img src="./img/logo-62630f3fbd.png" alt="logo"></a>
+      <a href="#" class="logo"><img src="./img/logo.svg" alt="logo"></a>
     </div>
     <nav class="sidebar__nav nav">
       <h2 class="nav__title">Account</h2>
@@ -33,7 +33,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#account"></use>
+              <use xlink:href="img/sprite.svg#account"></use>
             </svg>
             <span class="nav__link-text">Account</span>
           </a>
@@ -41,7 +41,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link active">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#wallets"></use>
+              <use xlink:href="img/sprite.svg#wallets"></use>
             </svg>
             <span class="nav__link-text">Wallets</span>
           </a>
@@ -49,7 +49,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#investments"></use>
+              <use xlink:href="img/sprite.svg#investments"></use>
             </svg>
             <span class="nav__link-text">Investments</span>
           </a>
@@ -57,7 +57,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#performance"></use>
+              <use xlink:href="img/sprite.svg#performance"></use>
             </svg>
             <span class="nav__link-text">Performance</span>
           </a>
@@ -65,7 +65,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#partners"></use>
+              <use xlink:href="img/sprite.svg#partners"></use>
             </svg>
             <span class="nav__link-text">Partners</span>
           </a>
@@ -76,7 +76,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#faq"></use>
+              <use xlink:href="img/sprite.svg#faq"></use>
             </svg>
             <span class="nav__link-text">GitBook</span>
           </a>
@@ -84,7 +84,7 @@
         <li class="nav__item">
           <a href="#" class="nav__link ">
             <svg class="nav__link-icon">
-              <use xlink:href="img/sprite-7fe2d12747.svg#settings"></use>
+              <use xlink:href="img/sprite.svg#settings"></use>
             </svg>
             <span class="nav__link-text">Settings</span>
           </a>
@@ -94,15 +94,15 @@
     <div class="sidebar__invite invite">
       <div class="invite__image">
         <picture>
-          <source srcset="./img/man-4cee46946a.webp" type="image/webp">
-          <img loading="lazy" src="./img/man-91cb5bad15.png" width="" height="" alt="man">
+          <source srcset="./img/man.webp" type="image/webp">
+          <img loading="lazy" src="./img/man.png" width="" height="" alt="man">
         </picture>
       </div>
       <h2 class="invite__title">Invite You Friends</h2>
       <p class="invite__text">Nam sapien sit sit morbi. Enim nunc ut mi egestas felis egestas diam.</p>
       <!-- <button class="button invite__button">
         <svg class="button__icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#ranking"></use>
+          <use xlink:href="img/sprite.svg#ranking"></use>
         </svg>
         <span class="button__text">Invite</span>
       </button> -->
@@ -129,10 +129,22 @@
           <ul class="wallets__list">
             <li class="wallets__card card card--purple">
               <svg class="card__icon card__icon--ethereum">
-                <use xlink:href="img/sprite-7fe2d12747.svg#ethereum"></use>
+                <use xlink:href="img/sprite.svg#ethereum"></use>
               </svg>
               <h3 class="card__title">ERC-20</h3>
               <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">ETH</div>
+                  <div class="card__amount-value">0.05</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">wBTC</div>
+                  <div class="card__amount-value">1.2400</div>
+                </li>
                 <li class="card__amount-item">
                   <div class="card__amount-title">USDT</div>
                   <div class="card__amount-value">0.00</div>
@@ -153,7 +165,7 @@
                   data-animation="fadeInUp">Withdraw</button>
                 <button class="card__action button" data-path="invest" data-animation="fadeInUp">
                   <svg class="button__icon ">
-                    <use xlink:href="img/sprite-7fe2d12747.svg#ranking"></use>
+                    <use xlink:href="img/sprite.svg#ranking"></use>
                   </svg>
                   <span class="button__text">Invest</span>
                 </button>
@@ -161,7 +173,7 @@
             </li>
             <li class="wallets__card card card--blue">
               <svg class="card__icon card__icon--bnb">
-                <use xlink:href="img/sprite-7fe2d12747.svg#bnb"></use>
+                <use xlink:href="img/sprite.svg#bnb"></use>
               </svg>
               <h3 class="card__title">BEP-20</h3>
               <ul class="card__amount">
@@ -185,7 +197,7 @@
                   data-animation="fadeInUp">Withdraw</button>
                 <button class="card__action button" data-path="invest" data-animation="fadeInUp">
                   <svg class="button__icon ">
-                    <use xlink:href="img/sprite-7fe2d12747.svg#ranking"></use>
+                    <use xlink:href="img/sprite.svg#ranking"></use>
                   </svg>
                   <span class="button__text">Invest</span>
                 </button>
@@ -193,7 +205,7 @@
             </li>
             <li class="wallets__card card card--blue-light">
               <svg class="card__icon card__icon--tron">
-                <use xlink:href="img/sprite-7fe2d12747.svg#tron"></use>
+                <use xlink:href="img/sprite.svg#tron"></use>
               </svg>
               <h3 class="card__title">TRC-20</h3>
               <ul class="card__amount">
@@ -213,7 +225,7 @@
                   data-animation="fadeInUp">Withdraw</button>
                 <button class="card__action button" data-path="invest" data-animation="fadeInUp">
                   <svg class="button__icon ">
-                    <use xlink:href="img/sprite-7fe2d12747.svg#ranking"></use>
+                    <use xlink:href="img/sprite.svg#ranking"></use>
                   </svg>
                   <span class="button__text">Invest</span>
                 </button>
@@ -221,7 +233,7 @@
             </li>
             <li class="wallets__card card card--beige">
               <svg class="card__icon card__icon--bitcoin">
-                <use xlink:href="img/sprite-7fe2d12747.svg#bitcoin"></use>
+                <use xlink:href="img/sprite.svg#bitcoin"></use>
               </svg>
               <h3 class="card__title">TRC-20</h3>
               <ul class="card__amount">
@@ -241,7 +253,35 @@
                   data-animation="fadeInUp">Withdraw</button>
                 <button class="card__action button" data-path="invest" data-animation="fadeInUp">
                   <svg class="button__icon ">
-                    <use xlink:href="img/sprite-7fe2d12747.svg#ranking"></use>
+                    <use xlink:href="img/sprite.svg#ranking"></use>
+                  </svg>
+                  <span class="button__text">Invest</span>
+                </button>
+              </div>
+            </li>
+            <li class="wallets__card card grayfilter">
+              <!-- <svg class="card__icon card__icon--bitcoin">
+                <use xlink:href="img/sprite.svg#bitcoin"></use>
+              </svg> -->
+              <h3 class="card__title">ALO</h3>
+              <ul class="card__amount">
+                <li class="card__amount-item">
+                  <div class="card__amount-title">USDT</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+                <li class="card__amount-item">
+                  <div class="card__amount-title">DAI</div>
+                  <div class="card__amount-value">0.00</div>
+                </li>
+              </ul>
+              <div class="card__actions">
+                <button class="card__action button button--transparent" data-path="deposit"
+                  data-animation="fadeInUp">Deposit</button>
+                <button class="card__action button button--transparent" data-path="withdraw"
+                  data-animation="fadeInUp">Withdraw</button>
+                <button class="card__action button" data-path="invest" data-animation="fadeInUp">
+                  <svg class="button__icon ">
+                    <use xlink:href="img/sprite.svg#ranking"></use>
                   </svg>
                   <span class="button__text">Invest</span>
                 </button>
@@ -347,25 +387,27 @@
     <div class="modal__container" role="dialog" aria-modal="true" data-target="deposit">
       <button class="btn-reset modal__close js-modal-close" aria-label="close modal">
         <svg class="modal__close-icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#close"></use>
+          <use xlink:href="img/sprite.svg#close"></use>
         </svg>
       </button>
       <div class="modal__content">
         <form action="#" class="wallets-actions form form--modal">
           <h2 class="wallets-actions__title">Deposit</h2>
           <div class="wallets-actions__descr">
-            <p class="wallets-actions__text">You buy <span class="wallets-actions__text--blue-bold">0.000005 BTC</span>
-              for <span class="wallets-actions__text--violet">30 USDT</span>.
+            <p class="wallets-actions__text">Please deposit one of the available currencies to ERC-20 Wallet.
             </p>
-            <p class="wallets-actions__text">To continue the operation, select a network and make a paymen</p>
+
           </div>
           <div class="wallets-actions__inputs">
             <div class="wallets-actions__item">
-              <div class="form__label">Choose Network</div>
-              <select name="network" class="form__select">
-                <option value="TRC" selected>TRC 20</option>
-                <option value="ERC">ERC-20</option>
-                <option value="BEP">BEP-20</option>
+              <div class="form__label">Token</div>
+
+              <select name="compound" class="form__select">
+                <option data-asset="./img/token/tether.svg" value="tether" selected>USDT</option>
+                <option data-asset="./img/token/tether.svg" value="bridge-tether">BUSDT</option>
+                <option data-asset="./img/token/dai.png" value="dai">DAI</option>
+                <option data-asset="./img/token/wbtc.svg" value="bnb">WBTC</option>
+                <option data-asset="./img/token/ethereum.svg" value="ethereum">Ethereum</option>
               </select>
             </div>
             <div class="wallets-actions__item">
@@ -375,10 +417,10 @@
               </div>
             </div>
           </div>
-          <img class="wallets-actions__image" src="./img/qr-code-3d2ab10a0d.svg" alt="qr-code">
+          <img class="wallets-actions__image" src="./img/qr-code.svg" alt="qr-code">
           <div class="wallets-actions__actions">
             <button class="wallets-actions__button form__button button" data-path="success"
-              data-animation="fadeInUp">Deposit</button>
+              data-animation="fadeInUp">I’ve made the transfer</button>
           </div>
         </form>
       </div>
@@ -387,34 +429,34 @@
     <div class="modal__container" role="dialog" aria-modal="true" data-target="invest">
       <button class="btn-reset modal__close js-modal-close" aria-label="close modal">
         <svg class="modal__close-icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#close"></use>
+          <use xlink:href="img/sprite.svg#close"></use>
         </svg>
       </button>
       <div class="modal__content">
         <form action="#" class="wallets-actions form form--modal">
           <h2 class="wallets-actions__title">Invest</h2>
           <div class="wallets-actions__descr">
-            <p class="wallets-actions__text">Eu eu elementum laoreet faucibus lacus velit maecenas. Sollicitudin augue
-              quis id placerat phasellus ornare ut.</p>
+            <p class="wallets-actions__text">Please choose the token, amount, investment duration and if you would like
+              to compound the dividends.</p>
           </div>
           <div class="wallets-actions__inputs">
             <div class="wallets-actions__row">
               <div class="wallets-actions__item">
                 <div class="form__label">Network</div>
-                <select name="compound" class="form__select">
-                  <option data-asset="./img/network/trc-f1750b92fc.svg" value="TRC" selected>TRC-20</option>
-                  <option data-asset="./img/network/bep-6661eafeb4.svg" value="BEP">BEP-20</option>
-                  <option data-asset="./img/network/erc-0567b30878.svg" value="ERC">ERC-20</option>
-                  <option data-asset="./img/network/btc-eee0f4c9d6.svg" value="BTC">BTC</option>
+                <select id="select-network" name="compound" class="form__select select-network">
+                  <option data-asset="./img/network/trc.svg" value="TRC" selected>TRC-20</option>
+                  <option data-asset="./img/network/bep.svg" value="BEP">BEP-20</option>
+                  <option data-asset="./img/network/erc.svg" value="ERC">ERC-20</option>
+                  <option data-asset="./img/network/btc.svg" value="BTC">BTC</option>
                 </select>
               </div>
               <div class="wallets-actions__item">
                 <div class="form__label">Token</div>
                 <select name="compound" class="form__select">
-                  <option data-asset="./img/token/tether-777fac899d.svg" value="tether" selected>Tether (USDT)</option>
-                  <option data-asset="./img/token/bnb-6661eafeb4.svg" value="bnb">BNB</option>
-                  <option data-asset="./img/token/ethereum-0567b30878.svg" value="ethereum">Ethereum</option>
-                  <option data-asset="./img/token/bitcoin-eee0f4c9d6.svg" value="bitcoin">Bitcoin</option>
+                  <option data-asset="./img/token/tether.svg" value="tether" selected>Tether (USDT)</option>
+                  <option data-asset="./img/token/bnb.svg" value="bnb">BNB</option>
+                  <option data-asset="./img/token/ethereum.svg" value="ethereum">Ethereum</option>
+                  <option data-asset="./img/token/bitcoin.svg" value="bitcoin">Bitcoin</option>
                 </select>
               </div>
 
@@ -452,9 +494,11 @@
             <button class="wallets-actions__switch-btn switch-btn"></button>
             <div class="wallets-actions__switch-info">
               <svg class="wallets-actions__switch-info-icon">
-                <use xlink:href="img/sprite-7fe2d12747.svg#info"></use>
+                <use xlink:href="img/sprite.svg#info"></use>
               </svg>
-              <p class="wallets-actions__switch-info-text">Lorem ipsum dolor</p>
+              <p class="wallets-actions__switch-info-text">Compounding dividends means reinvesting your dividends to
+                earn more dividends, helping your investment grow faster over time. Note that reinvested dividends will
+                be held for the same duration as your initial investment.</p>
             </div>
           </div>
           <div class="wallets-actions__actions">
@@ -468,14 +512,13 @@
     <div class="modal__container" role="dialog" aria-modal="true" data-target="withdraw">
       <button class="btn-reset modal__close js-modal-close" aria-label="close modal">
         <svg class="modal__close-icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#close"></use>
+          <use xlink:href="img/sprite.svg#close"></use>
         </svg>
       </button>
       <form action="#" class="wallets-actions form form--modal">
         <h2 class="wallets-actions__title">Withdraw</h2>
         <div class="wallets-actions__descr">
-          <p class="wallets-actions__text">You want to withdraw<span class="wallets-actions__text--blue-bold">2.00025
-              BTC</span> to the address:</p>
+          <p class="wallets-actions__text"> Please input your wallet address and verify double check the Network.</p>
         </div>
         <div class="wallets-actions__inputs">
 
@@ -490,19 +533,19 @@
             <div class="wallets-actions__item">
               <div class="form__label">Network</div>
               <select name="compound" class="form__select">
-                <option data-asset="./img/network/trc-f1750b92fc.svg" value="TRC" selected>TRC-20</option>
-                <option data-asset="./img/network/bep-6661eafeb4.svg" value="BEP">BEP-20</option>
-                <option data-asset="./img/network/erc-0567b30878.svg" value="ERC">ERC-20</option>
-                <option data-asset="./img/network/btc-eee0f4c9d6.svg" value="BTC">BTC</option>
+                <option data-asset="./img/network/trc.svg" value="TRC" selected>TRC-20</option>
+                <option data-asset="./img/network/bep.svg" value="BEP">BEP-20</option>
+                <option data-asset="./img/network/erc.svg" value="ERC">ERC-20</option>
+                <option data-asset="./img/network/btc.svg" value="BTC">BTC</option>
               </select>
             </div>
             <div class="wallets-actions__item">
               <div class="form__label">Token</div>
               <select name="compound" class="form__select">
-                <option data-asset="./img/token/tether-777fac899d.svg" value="tether" selected>Tether (USDT)</option>
-                <option data-asset="./img/token/bnb-6661eafeb4.svg" value="bnb">BNB</option>
-                <option data-asset="./img/token/ethereum-0567b30878.svg" value="ethereum">Ethereum</option>
-                <option data-asset="./img/token/bitcoin-eee0f4c9d6.svg" value="bitcoin">Bitcoin</option>
+                <option data-asset="./img/token/tether.svg" value="tether" selected>Tether (USDT)</option>
+                <option data-asset="./img/token/bnb.svg" value="bnb">BNB</option>
+                <option data-asset="./img/token/ethereum.svg" value="ethereum">Ethereum</option>
+                <option data-asset="./img/token/bitcoin.svg" value="bitcoin">Bitcoin</option>
               </select>
             </div>
 
@@ -527,18 +570,14 @@
     <div class="modal__container" role="dialog" aria-modal="true" data-target="success">
       <button class="btn-reset modal__close js-modal-close" aria-label="Закрыть модальное окно"><svg
           class="modal__close-icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#close"></use>
+          <use xlink:href="img/sprite.svg#close"></use>
         </svg></button>
       <div class="modal__content">
         <div class="wallets-actions wallets-actions--success form form--modal">
           <h2 class="wallets-actions__title wallets-actions__title--success">Payment Completed Successfully!</h2>
           <div class="wallets-actions__descr">
-            <p class="wallets-actions__text wallets-actions__text--success"><span
-                class="wallets-actions__text--blue-bold">0.000005 BTC</span> have been credited to your account.
-              In order to withdraw your bitcoins, invite 2 referrals or <a class="wallets-actions__text-link"
-                href="#">read
-                the
-                rules</a>
+            <p class="wallets-actions__text wallets-actions__text--success">Your withdrawal request has been <br> recorded
+              and it’s been processed.
             </p>
           </div>
           <div class="wallets-actions__actions">
@@ -551,7 +590,7 @@
     <div class="modal__container" role="dialog" aria-modal="true" data-target="success-invest">
       <button class="btn-reset modal__close js-modal-close" aria-label="Закрыть модальное окно"><svg
           class="modal__close-icon">
-          <use xlink:href="img/sprite-7fe2d12747.svg#close"></use>
+          <use xlink:href="img/sprite.svg#close"></use>
         </svg></button>
       <div class="modal__content">
         <div class="wallets-actions wallets-actions--success form form--modal">
