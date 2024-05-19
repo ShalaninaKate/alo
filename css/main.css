@@ -934,7 +934,15 @@ body::after {
   display: -ms-grid;
   display: grid;
   gap: var(--gap-card);
-  grid-template-columns: repeat(auto-fit, minmax(24.375rem, 21.875rem));
+  -ms-grid-columns: (minmax(24.375rem, 21.875rem))[3];
+  grid-template-columns: repeat(3, minmax(24.375rem, 21.875rem));
+}
+@media (max-width: 106.25em) {
+  .wallets__list {
+    -ms-grid-columns: (minmax(24.375rem, 21.875rem))[2];
+    grid-template-columns: repeat(2, minmax(24.375rem, 21.875rem));
+    gap: var(--gap-card-mob);
+  }
 }
 @media (max-width: 81.25em) {
   .wallets__list {
@@ -1102,6 +1110,7 @@ body::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  justify-items: start;
   font-weight: 500;
   font-size: 0.875rem;
 }
@@ -1125,6 +1134,7 @@ body::after {
   justify-self: end;
 }
 .table__item-status {
+  padding: 0.125rem 0.9375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1137,11 +1147,9 @@ body::after {
   height: 1.5rem;
   border-radius: 4px;
   color: var(--base-white);
-  width: 5.3125rem;
   background: var(--blue);
 }
 .table__item-status--active {
-  width: 4.5625rem;
   background: var(--light-green);
 }
 
